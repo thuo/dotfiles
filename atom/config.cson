@@ -1,0 +1,67 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "1d30d558-9258-4263-a333-4f5a1e8f19a9"
+    js:
+      indent_size: 2
+    json:
+      indent_size: 2
+    jsx:
+      indent_size: 2
+    python:
+      beautify_on_save: true
+  "autocomplete-python":
+    useKite: false
+  autosave:
+    enabled: true
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    fontFamily: "Monaco"
+    fontSize: 12
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "5f4099bd-32ac-81b6-c807-8dd19da13ebe"
+  "file-icons":
+    coloured: false
+    tabPaneIcon: false
+  hyperclick:
+    darwinTriggerKeys: "ctrlKey"
+  "linter-eslint":
+    fixOnSave: true
+  "linter-stylelint":
+    disableWhenNoConfig: false
+    useStandard: true
+  "one-dark-ui":
+    hideDockButtons: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      excludedGlobs: [
+        "*.json"
+      ]
+  "svg-preview": {}
+  welcome:
+    showOnStartup: false
+".java.source":
+  editor:
+    tabLength: 4
+".shell.source":
+  editor:
+    tabLength: 4

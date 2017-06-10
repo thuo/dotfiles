@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# Brewfile
+brew bundle dump --force
+
+# Atom Packages
+apm list  --json --installed \
+    | jq --raw-output '.user[] | .name' \
+    > atom/packages.txt
+
+# VSCode Extensions
+code --list-extensions \
+    > vscode/extensions.txt
+
+# Global NPM packages
+npm ls  --json --global --depth=0 \
+    | jq --raw-output '.dependencies | del(.npm) | keys[]' \
+    > npm.txt
+
+# PIP packages
+pip3 list --format json --not-required \
+    | jq --raw-output 'map(.name) - ["pip", "wheel", "setuptools"] | .[]' \
+    > pip.txt

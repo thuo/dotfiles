@@ -1,0 +1,6 @@
+burkeholland.simple-react-snippets
+dbaeumer.vscode-eslint
+eg2.tslint
+esbenp.prettier-vscode
+robertohuertasm.vscode-icons
+xabikos.JavaScriptSnippets
