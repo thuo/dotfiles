@@ -1,23 +1,24 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.startupEditor": "newUntitledFile",
-    "vsicons.dontShowNewVersionMessage": true,
-    "eslint.autoFixOnSave": true,
-    "editor.tabSize": 2,
-    "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 0,
-    "workbench.activityBar.visible": false,
-    "workbench.fontAliasing": "auto",
-    "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Monokai",
-    "files.autoSave": "afterDelay",
-    "javascript.validate.enable": false,
-    "editor.formatOnSave": true,
-    "prettier.disableLanguages": [
-        "json"
-    ]
+  "editor.fontFamily": "Monaco, monospace",
+  "editor.tabSize": 2,
+
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": false,
+  "workbench.fontAliasing": "auto",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.colorTheme": "Monokai",
+
+  "prettier.requireConfig": false,
+  "prettier.singleQuote": true,
+
+  "explorer.autoReveal": false,
+  "eslint.autoFixOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "javascript.validate.enable": false,
+  "breadcrumbs.enabled": true
 }

@@ -8,7 +8,6 @@ brew "jq"
 brew "node"
 brew "postgresql", restart_service: true
 brew "python"
-brew "reattach-to-user-namespace"
 brew "tmux"
 brew "tree"
 brew "yarn"

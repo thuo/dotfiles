@@ -1,7 +1,5 @@
 "*":
   "atom-beautify":
-    general:
-      _analyticsUserId: "1d30d558-9258-4263-a333-4f5a1e8f19a9"
     js:
       indent_size: 2
     json:
@@ -12,8 +10,6 @@
       beautify_on_save: true
   "autocomplete-python":
     useKite: false
-  autosave:
-    enabled: true
   core:
     customFileTypes:
       "source.ini": [
@@ -36,10 +32,7 @@
     fontFamily: "Monaco"
     fontSize: 12
     showIndentGuide: true
-  "exception-reporting":
-    userId: "5f4099bd-32ac-81b6-c807-8dd19da13ebe"
   "file-icons":
-    coloured: false
     tabPaneIcon: false
   hyperclick:
     darwinTriggerKeys: "ctrlKey"
@@ -52,11 +45,9 @@
     hideDockButtons: true
   "prettier-atom":
     formatOnSaveOptions:
-      enabled: true
       excludedGlobs: [
         "*.json"
       ]
-  "svg-preview": {}
   welcome:
     showOnStartup: false
 ".java.source":
