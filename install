@@ -23,6 +23,7 @@ function __tmux__() {
         echo "Installing Tmux Plugin Manager..."
         git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
     fi
+    sh ./link tmux
     sh "$TPM_DIR/bin/install_plugins"
 }
 
@@ -42,18 +43,25 @@ function __pip__() {
     pip3 install --upgrade -r pip.txt
 }
 
-if type "__$1__" &> /dev/null; then
-    eval "__$1__"
-elif [ -z "$1" ]; then
-    __homebrew__
-    __oh-my-zsh__
-    __tmux__
-    __atom__
-    __vscode__
-    __npm__
-    __pip__
-    __gems__
+if [ -z "$1" ]; then
+    DOTFILES=(
+        homebrew
+        oh-my-zsh
+        tmux
+        atom
+        vscode
+        npm
+        pip
+    )
 else
-    echo "$1 dotfiles not found"
-    exit 1
+    DOTFILES="$@"
 fi
+
+for i in $DOTFILES; do
+    if type "__${i}__" &> /dev/null; then
+        echo "Installing ${i} dotfiles..."
+        eval "__${i}__"
+    else
+        echo "${i} dotfiles not found"
+    fi
+done

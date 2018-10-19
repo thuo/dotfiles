@@ -35,16 +35,24 @@ function __vscode__() {
     ln -sfv "$(pwd)/vscode/settings.json" "$VSCODE_USER_DIR/settings.json"
 }
 
-if type "__$1__" &> /dev/null; then
-    eval "__$1__"
-elif [ -z "$1" ]; then
-    __zsh__
-    __tmux__
-    __git__
-    __vim__
-    __atom__
-    __vscode__
+if [ -z "$1" ]; then
+    DOTFILES=(
+        zsh
+        tmux
+        git
+        vim
+        atom
+        vscode
+    )
 else
-    echo "$1 dotfiles not found"
-    exit 1
+    DOTFILES="$@"
 fi
+
+for i in $DOTFILES; do
+    if type -t "__${i}__" | grep function &> /dev/null; then
+        echo "Linking ${i} dotfiles..."
+        eval "__${i}__"
+    else
+        echo "${i} dotfiles not found"
+    fi
+done
