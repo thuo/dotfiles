@@ -20,5 +20,5 @@
   "eslint.autoFixOnSave": true,
   "files.trimTrailingWhitespace": true,
   "javascript.validate.enable": false,
-  "breadcrumbs.enabled": true
+  "files.insertFinalNewline": true
 }

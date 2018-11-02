@@ -92,14 +92,12 @@ PATH=$PATH:$ANDROID_HOME/emulator
 PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:$ANDROID_HOME/tools
 
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
+
 alias ls="ls -G1"
 alias androidstudio="open -a /Applications/Android\ Studio.app"
-
-eval "$(hub alias -s)"
-
-function compare() {
-  hub compare ${1:=master}...$(git rev-parse --abbrev-ref HEAD)
-}
+alias ratio="echo -n -e '\u2236'"
 
 function daemon() {
   nohup $@ > /dev/null 2>&1 & disown
