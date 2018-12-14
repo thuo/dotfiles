@@ -10,8 +10,8 @@ brew "nvm"
 brew "postgresql", restart_service: true
 brew "python"
 brew "tmux"
+brew "trash"
 brew "tree"
-brew "wxmac"
 brew "yarn", args: ["without-node"]
 brew "zsh"
 cask "airflow"

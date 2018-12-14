@@ -11,14 +11,12 @@
   "workbench.fontAliasing": "auto",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorTheme": "Monokai",
-
-  "prettier.requireConfig": false,
-  "prettier.singleQuote": true,
 
   "explorer.autoReveal": false,
   "eslint.autoFixOnSave": true,
   "files.trimTrailingWhitespace": true,
   "javascript.validate.enable": false,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "prettier.requireConfig": true,
+  "editor.minimap.enabled": false,
 }

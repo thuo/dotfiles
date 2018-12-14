@@ -88,27 +88,19 @@ export EDITOR=vim
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_NDK=$HOME/Library/Android/sdk/ndk-r10e
 
-PATH=$PATH:$ANDROID_HOME/emulator
-PATH=$PATH:$ANDROID_HOME/platform-tools
-PATH=$PATH:$ANDROID_HOME/tools
+if [ -x /usr/libexec/path_helper ]; then
+  PATH=""
+  eval `/usr/libexec/path_helper -s`
+fi
 
-export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
-alias ls="ls -G1"
-alias androidstudio="open -a /Applications/Android\ Studio.app"
+alias studio="open -a /Applications/Android\ Studio.app"
 alias ratio="echo -n -e '\u2236'"
 
 function daemon() {
   nohup $@ > /dev/null 2>&1 & disown
 }
 
-function dotenv() {
-  dotenv_path=${1:="$PWD/.env"}
-  dotenv_contents=$(grep -o '^[^#]*' "$dotenv_path" | grep -ve '^$' | grep -ve '^\s*$')
-  if [ -n "${dotenv_contents}" ]; then
-    while read -r line; do
-      export "$line"
-    done <<< "$dotenv_contents"
-  fi
-}
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
