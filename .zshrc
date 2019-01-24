@@ -97,6 +97,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_H
 
 alias studio="open -a /Applications/Android\ Studio.app"
 alias ratio="echo -n -e '\u2236'"
+alias tmux="pgrep tmux &> /dev/null && \tmux attach || \tmux"
 
 function daemon() {
   nohup $@ > /dev/null 2>&1 & disown

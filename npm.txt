@@ -1,1 +1,1 @@
-react-devtools
+cordova

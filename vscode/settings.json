@@ -1,10 +1,18 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Monaco, monospace",
-  "editor.tabSize": 2,
-
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+
+  "editor.fontFamily": "Monaco, monospace",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  "prettier.eslintIntegration": true,
+  "prettier.printWidth": 120,
 
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": false,
@@ -12,11 +20,9 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
 
-  "explorer.autoReveal": false,
   "eslint.autoFixOnSave": true,
-  "files.trimTrailingWhitespace": true,
   "javascript.validate.enable": false,
-  "files.insertFinalNewline": true,
-  "prettier.requireConfig": true,
-  "editor.minimap.enabled": false,
+
+  "explorer.autoReveal": false,
+  "extensions.ignoreRecommendations": true
 }
