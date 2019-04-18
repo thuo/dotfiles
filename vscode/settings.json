@@ -6,6 +6,7 @@
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
 
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
@@ -24,5 +25,6 @@
   "javascript.validate.enable": false,
 
   "explorer.autoReveal": false,
+  "extensions.showRecommendationsOnlyOnDemand": true,
   "extensions.ignoreRecommendations": true
 }
