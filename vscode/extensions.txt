@@ -2,3 +2,4 @@ burkeholland.simple-react-snippets
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 leizongmin.node-module-intellisense
+ms-python.python

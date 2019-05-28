@@ -6,7 +6,10 @@
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
 
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
@@ -20,6 +23,10 @@
   "workbench.fontAliasing": "auto",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#2a2a2a",
+    "statusBar.noFolderBackground": "#2a2a2a"
+  },
 
   "eslint.autoFixOnSave": true,
   "javascript.validate.enable": false,
