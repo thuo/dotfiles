@@ -2,22 +2,6 @@
 {
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
-
-  "editor.fontFamily": "Monaco, monospace",
-  "editor.formatOnSave": true,
-  "editor.minimap.enabled": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-
-  "files.autoSave": "onFocusChange",
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-
-  "prettier.eslintIntegration": true,
-  "prettier.printWidth": 120,
-
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": false,
   "workbench.fontAliasing": "auto",
@@ -27,11 +11,25 @@
     "statusBar.background": "#2a2a2a",
     "statusBar.noFolderBackground": "#2a2a2a"
   },
-
-  "eslint.autoFixOnSave": true,
-  "javascript.validate.enable": false,
-
+  "editor.fontFamily": "Monaco, monospace",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "explorer.autoReveal": false,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "breadcrumbs.enabled": false,
+  "javascript.validate.enable": false,
+  "eslint.autoFixOnSave": true,
+  "prettier.eslintIntegration": true,
+  "prettier.printWidth": 120,
 }
