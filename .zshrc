@@ -95,8 +95,7 @@ fi
 
 export PATH=$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
 
-alias studio="open -a /Applications/Android\ Studio.app"
-alias ratio="echo -n -e '\u2236'"
+alias android_studio="open -a /Applications/Android\ Studio.app"
 
 function daemon() {
   nohup $@ > /dev/null 2>&1 & disown
