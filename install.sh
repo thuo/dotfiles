@@ -23,7 +23,7 @@ function __tmux__() {
         echo "Installing Tmux Plugin Manager..."
         git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
     fi
-    sh ./link tmux
+    sh ./link.sh tmux
     sh "$TPM_DIR/bin/install_plugins"
 }
 
