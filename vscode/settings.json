@@ -22,10 +22,8 @@
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  // extensions
-  "extensions.showRecommendationsOnlyOnDemand": true,
-  "extensions.ignoreRecommendations": true,
   // miscellaneous
+  "extensions.ignoreRecommendations": true,
   "explorer.autoReveal": false,
   "breadcrumbs.enabled": false,
   "javascript.validate.enable": false,
