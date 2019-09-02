@@ -7,13 +7,11 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": false,
   "workbench.fontAliasing": "auto",
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
     "statusBar.background": "#2a2a2a",
     "statusBar.noFolderBackground": "#2a2a2a"
   },
-  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 12,
   // editor
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnSave": true,
@@ -29,7 +27,6 @@
   "javascript.validate.enable": false,
   // extension-specific
   "eslint.autoFixOnSave": true,
-  "prettier.eslintIntegration": true,
   // langauge-specific
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
