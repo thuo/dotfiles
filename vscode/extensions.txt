@@ -1,3 +1,4 @@
+adpyke.vscode-sql-formatter
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 Gimly81.matlab
