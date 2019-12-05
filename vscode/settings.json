@@ -25,6 +25,7 @@
   "explorer.autoReveal": false,
   "breadcrumbs.enabled": false,
   "javascript.validate.enable": false,
+  "window.newWindowDimensions": "fullscreen",
   // extension-specific
   "eslint.autoFixOnSave": true,
   // langauge-specific
@@ -38,4 +39,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
