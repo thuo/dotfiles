@@ -17,16 +17,6 @@ function __vim__() {
     ln -sfv "$(pwd)/.vimrc" "$HOME/.vimrc"
 }
 
-function __atom__() {
-    ATOM_DIR="$HOME/.atom"
-    if [ ! -d "$ATOM_DIR" ]; then
-        mkdir -p "$ATOM_DIR"
-    fi
-    ln -sfv "$(pwd)/atom/styles.less" "$ATOM_DIR/styles.less"
-    ln -sfv "$(pwd)/atom/config.cson" "$ATOM_DIR/config.cson"
-    ln -sfv "$(pwd)/atom/snippets.cson" "$ATOM_DIR/snippets.cson"
-}
-
 function __vscode__() {
     VSCODE_USER_DIR="$HOME/Library/Application Support/Code/User"
     if [ ! -d "$VSCODE_USER_DIR" ]; then
@@ -41,7 +31,6 @@ if [ -z "$1" ]; then
         tmux
         git
         vim
-        atom
         vscode
     )
 else

@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -55,8 +55,6 @@ plugins=(
   git
   zsh-autosuggestions
   z
-  docker
-  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -91,25 +89,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR=vim
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export ANDROID_NDK=$HOME/Library/Android/sdk/ndk-r10e
-
-if [ -x /usr/libexec/path_helper ]; then
-  PATH=""
-  eval `/usr/libexec/path_helper -s`
-fi
-
-PATH=$PATH:$ANDROID_HOME/emulator
-PATH=$PATH:$ANDROID_HOME/platform-tools
-PATH=$PATH:$ANDROID_HOME/tools
-PATH=$PATH:$HOME/Library/Python/3.7/bin
-
-alias android_studio="open -a /Applications/Android\ Studio.app"
 
 function daemon() {
   nohup $@ > /dev/null 2>&1 & disown
 }
-
-export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
-source "/usr/local/etc/bash_completion.d/nvm"

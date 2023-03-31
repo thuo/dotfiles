@@ -27,10 +27,6 @@ function __tmux__() {
     sh "$TPM_DIR/bin/install_plugins"
 }
 
-function __atom__() {
-    apm install --packages-file atom/packages.txt
-}
-
 function __vscode__() {
     while read line; do code --install-extension "$line"; done < vscode/extensions.txt
 }
@@ -48,7 +44,6 @@ if [ -z "$1" ]; then
         homebrew
         oh-my-zsh
         tmux
-        atom
         vscode
         npm
         pip

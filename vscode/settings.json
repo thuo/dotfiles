@@ -1,11 +1,12 @@
 {
   // telemetry
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
+  //window
+  "window.restoreFullscreen": true,
   // workbench
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": false,
-  "workbench.fontAliasing": "auto",
+  "workbench.fontAliasing": "default",
   "workbench.tree.indent": 12,
   "workbench.colorCustomizations": {
     "statusBar.background": "#2a2a2a",
@@ -15,34 +16,17 @@
   "editor.fontFamily": "Monaco, monospace",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll": true
   },
   // files
   "files.autoSave": "onFocusChange",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  // miscellaneous
+  // extensions
   "extensions.ignoreRecommendations": true,
-  "extensions.showRecommendationsOnlyOnDemand": true,
+  // explorer
   "explorer.autoReveal": false,
-  "breadcrumbs.enabled": false,
-  "window.newWindowDimensions": "fullscreen",
-  // langauge-specific
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.tabSize": 2
-  }
+  "explorer.confirmDelete": false
 }

@@ -2,7 +2,7 @@
 	excludesfile = ~/.gitignore_global
 	ignorecase = false
 [user]
-	email = thuohm@gmail.com
-	name = Humphrey Thuo
+	email = thuo@users.noreply.github.com
+	name = Thuo Mwai
 [url "git@github.com:"]
 	insteadOf = "https://github.com/"
